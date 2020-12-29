@@ -156,6 +156,7 @@ body {
 
 // portfoliu container
 .portfolio {
+  position: relative;
   display: none;
   margin: auto;
   margin-left: 18%;
@@ -242,27 +243,108 @@ body {
 .disp {
   display: inline;
 }
-.add {
-  position: absolute;
-  top: 0;
-  display: inline;
-}
+
 .none {
   display: none;
 }
 
 .contact {
+  display: none;
   position: relative;
+  height: 100vh;
+  width: 85%;
   color: white;
   height: 100vh;
-  margin-left: 20vh;
+  margin-left: 22vh;
   h1 {
     text-align: center;
     padding: 3vh;
+    color: $blue;
   }
-  .contact-content {
-    background-color: blue;
-    display: flex;
-    justify-content: space-between;
+  p {
+    text-align: center;
+    margin-top: 3vh;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.3rem;
   }
+}
+
+.contact-content {
+  width: 90%;
+  margin-left: 10vh;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 10px 40px 10px;
+  a {
+    background-color: transparent;
+    color: none;
+    color: white;
+  }
+}
+
+.add {
+  display: inline;
+  position: absolute;
+  top: 0;
+}
+
+.form-container {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 10vh;
+  border: 2px solid $blue;
+  input {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  label {
+    margin-top: 2vh;
+  }
+  textarea {
+    text-align: center;
+  }
+}
+.contact-form {
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  height: 50vh;
+  margin-top: 5vh;
+
+  button {
+    background-color: $blue;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 40px 10px 40px;
+    border: transparent;
+    border-radius: 10px;
+    margin-top: 3vh;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+  }
+}
+.fab {
+  font-size: 2rem;
+  color: white;
+}
+
+.fa-linkedin {
+  border: transparent;
+  color: $blue;
+  background-color: white;
+}
+.linkedin {
+  border: transparent;
+  background-color: transparent;
+  overflow: hidden;
+}
+.fa-twitter {
+  color: $blue;
 }

@@ -15,6 +15,7 @@ portfolio.classList.remove('add')
 certificates.classList.remove('add')
 aboutMe.classList.remove('add')
 home.classList.remove('none')
+contact.classList.remove('add')
 home.classList.add('disp')
  
      }
@@ -23,6 +24,7 @@ home.classList.add('disp')
          portfolio.classList.remove('add')
          certificates.classList.remove('add')
          home.classList.add('none')
+         contact.classList.remove('add')
          aboutMe.classList.add('add')
 
      }
@@ -31,6 +33,7 @@ home.classList.add('disp')
        home.classList.add('none')
        aboutMe.classList.remove('add')
        certificates.classList.remove('add')
+       contact.classList.remove('add')
        portfolio.classList.add('add')
        
     }
@@ -39,12 +42,19 @@ home.classList.add('disp')
        home.classList.add('none')
     aboutMe.classList.remove('add')
         portfolio.classList.remove('add')
+        contact.classList.remove('add')
         certificates.classList.add('add')
+        console.log(certificates);
     }
     if(id==4){
            home.classList.remove('disp')
        home.classList.add('none')
+       aboutMe.classList.remove('add')
+       portfolio.classList.remove('add')
+       certificates.classList.remove('add')
        contact.classList.add('add')
+       
+    
     
         
     }
