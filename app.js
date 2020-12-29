@@ -1,7 +1,55 @@
 const buttons = document.querySelectorAll('.menu-lists');
 const menu = document.querySelector('.main-menu')
-const aboutMe = document.querySelector('.about-me')
 const right = document.querySelector('.right-side-content')
+
+const home = document.querySelector('.home-main-section')
+const portfolio = document.querySelector('.portfolio')
+const certificates = document.querySelector('.certificates')
+const aboutMe = document.querySelector('.about-me')
+const contact = document.querySelector('.contact')
+ 
+
+ const change = (id)=>{
+     if(id==0){
+portfolio.classList.remove('add')
+certificates.classList.remove('add')
+aboutMe.classList.remove('add')
+home.classList.remove('none')
+home.classList.add('disp')
+ 
+     }
+     if(id==1){
+         home.classList.remove('disp')
+         portfolio.classList.remove('add')
+         certificates.classList.remove('add')
+         home.classList.add('none')
+         aboutMe.classList.add('add')
+
+     }
+    if(id==2){
+       home.classList.remove('disp')
+       home.classList.add('none')
+       aboutMe.classList.remove('add')
+       certificates.classList.remove('add')
+       portfolio.classList.add('add')
+       
+    }
+    if(id==3){
+        home.classList.remove('disp')
+       home.classList.add('none')
+    aboutMe.classList.remove('add')
+        portfolio.classList.remove('add')
+        certificates.classList.add('add')
+    }
+    if(id==4){
+           home.classList.remove('disp')
+       home.classList.add('none')
+       contact.classList.add('add')
+    
+        
+    }
+ }
+
 menu.addEventListener('click',(e)=>{
     const id = e.target.dataset.id
      
@@ -9,17 +57,20 @@ menu.addEventListener('click',(e)=>{
 buttons.forEach((button)=>{
     button.classList.remove('active')
     e.target.classList.add('active')
+    
  
 })
+
     }
+    change(id)
+ 
 })
 
 
 
- const btn = document.querySelector('.btn')
- btn.addEventListener('click',()=>{
-     right.classList.remove('right-side-content')
-     right.classList.add('move')
-    
+ 
 
- })
+// 1 .home-main-section
+// 2 .about-me
+// 3 .portfolio-content
+// 4 certificates

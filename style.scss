@@ -9,15 +9,28 @@ $blue: #00a3e1;
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #17181b;
 }
+
+// Main tag
 .main-content {
   background-color: #17181b;
   position: relative;
 }
+// Container of first Main Section and Menu Bar
+.main-page {
+  display: flex;
+  position: relative;
+}
+
 /*home section */
 .home-main-section {
-  display: flex;
-  height: 100vh;
+  position: relative;
+  background: url("/photos/pexels-fauxels-3184357.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* Menu Content */
 .left-margin {
@@ -25,12 +38,16 @@ body {
   color: #6d6f6f;
   height: 100vh;
   text-align: center;
-  border-bottom: 1px solid white;
 }
+// Menu Bar image Container
 .photo-text {
   position: relative;
+  width: 200px;
+  img {
+    width: 200px;
+  }
 }
-
+// Font Awesome Person Image
 .name {
   font-family: "Playfair Display", serif;
   display: inline-block;
@@ -44,6 +61,7 @@ body {
   padding: 2px;
   font-weight: 300;
 }
+// Menu Bar container
 .main-menu {
   margin-top: 1vh;
   font-size: 20px;
@@ -53,24 +71,18 @@ body {
   grid-row-gap: 30px;
   justify-content: center;
 }
+// Menu Items Class
 .menu-lists {
   text-transform: capitalize;
   list-style-type: none;
   margin-left: 15px;
 }
+// Menu items active class
 .active {
   color: white;
 }
-.font {
-}
-.right-side-content {
-  width: 100%;
-  background: url("/photos/pexels-fauxels-3184357.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  transition: all 1s;
-}
+
+// underline for background image class
 .underline {
   position: absolute;
   width: 100%;
@@ -78,6 +90,8 @@ body {
   background-color: black;
   opacity: 0.6;
 }
+
+// }  main section title
 .header-title {
   font-family: "Playfair Display", serif;
   position: relative;
@@ -88,6 +102,7 @@ body {
   color: white;
   font-size: 1.7rem;
 }
+// main section Name color
 .fam-name {
   color: #00a3e1;
 }
@@ -96,14 +111,16 @@ body {
   animation: moves 5s infinite;
   display: inline-block;
 }
+// about me container
 .about-me {
+  display: none;
   position: relative;
-
   width: 80%;
   margin-left: 15%;
   transition: 1s;
-  border-bottom: 5px solid white;
+  padding-bottom: 3vh;
 }
+// About me title container
 .about-me-title {
   margin: auto;
   color: #00a3e1;
@@ -113,11 +130,12 @@ body {
   border-bottom: 1px dotted grey;
   width: 80%;
 }
+// about me font awesome image
 .span {
   display: inline-block;
   margin-top: 1vh;
 }
-
+// about me content container
 .about-me-content {
   margin-top: 4vh;
   color: white;
@@ -135,11 +153,14 @@ body {
     padding-bottom: 3vh;
   }
 }
+
+// portfoliu container
 .portfolio {
+  display: none;
   margin: auto;
   margin-left: 18%;
 }
-
+// portfolio content container
 .portfolio-content {
   display: flex;
   width: 90%;
@@ -147,11 +168,12 @@ body {
   margin-top: 5vh;
   justify-content: center;
 }
+// portfolio content left side container
 .column-left {
   display: grid;
   grid-template-columns: 300px;
   grid-row-gap: 50px;
-
+  height: 100vh;
   img {
     justify-self: center;
     width: 300px;
@@ -160,11 +182,13 @@ body {
     border-radius: 10px;
   }
 }
+//  portfolio content right side container
 .column-right {
   width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 500px;
-  grid-template-rows: repeat(10, 200px);
+
   grid-gap: 200px;
   justify-content: center;
   img {
@@ -173,6 +197,7 @@ body {
     border-radius: 10px;
   }
 }
+// main images
 .image {
   width: 200px;
 }
@@ -186,6 +211,58 @@ body {
 .cert-image {
   width: 600px;
 }
+.certificates {
+  display: none;
+  position: relative;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  text-align: center;
+  margin-left: 20vh;
+  h1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: $blue;
+    padding: 4vh;
+  }
+}
 .certificates-content {
   display: grid;
+  margin-top: 10vh;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 100px;
+  justify-content: center;
+
+  img {
+    width: 200px;
+  }
+}
+
+.disp {
+  display: inline;
+}
+.add {
+  position: absolute;
+  top: 0;
+  display: inline;
+}
+.none {
+  display: none;
+}
+
+.contact {
+  position: relative;
+  color: white;
+  height: 100vh;
+  margin-left: 20vh;
+  h1 {
+    text-align: center;
+    padding: 3vh;
+  }
+  .contact-content {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+  }
 }
