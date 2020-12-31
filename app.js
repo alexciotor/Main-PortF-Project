@@ -7,7 +7,22 @@ const portfolio = document.querySelector('.portfolio')
 const certificates = document.querySelector('.certificates')
 const aboutMe = document.querySelector('.about-me')
 const contact = document.querySelector('.contact')
- 
+ const menuBtn = document.querySelector('.menu-btn')
+const menuBar = document.querySelector('.left-margin')
+
+ menuBtn.addEventListener('click', (e)=>{
+     if(menuBar.classList.contains('menu-display')){
+         menuBar.classList.remove('menu-display')
+      
+      
+     }
+     else{
+         menuBar.classList.add('menu-display')
+       
+        
+         
+     }
+ })
 
  const change = (id)=>{
      if(id==0){
@@ -77,8 +92,6 @@ buttons.forEach((button)=>{
 })
 
 
-
- 
 
 // 1 .home-main-section
 // 2 .about-me
