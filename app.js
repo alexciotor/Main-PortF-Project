@@ -1,7 +1,10 @@
 const buttons = document.querySelectorAll('.menu-lists');
 const menu = document.querySelector('.main-menu')
 const right = document.querySelector('.right-side-content')
-
+const main = document.querySelector('.main-content')
+const rect = main.getBoundingClientRect()
+const abc = rect.width
+console.log(abc);
 const home = document.querySelector('.home-main-section')
 const portfolio = document.querySelector('.portfolio')
 const certificates = document.querySelector('.certificates')
@@ -13,8 +16,6 @@ const menuBar = document.querySelector('.left-margin')
  menuBtn.addEventListener('click', (e)=>{
      if(menuBar.classList.contains('menu-display')){
          menuBar.classList.remove('menu-display')
-      
-      
      }
      else{
          menuBar.classList.add('menu-display')
@@ -25,6 +26,10 @@ const menuBar = document.querySelector('.left-margin')
  })
 
  const change = (id)=>{
+     const main = document.querySelector('.main-content')
+const rect = main.getBoundingClientRect()
+ 
+     const menuBar = document.querySelector('.left-margin')
      if(id==0){
 portfolio.classList.remove('add')
 certificates.classList.remove('add')
@@ -32,7 +37,9 @@ aboutMe.classList.remove('add')
 home.classList.remove('none')
 contact.classList.remove('add')
 home.classList.add('disp')
- 
+ if(abc < 761){
+     menuBar.classList.remove('menu-display')
+ }
      }
      if(id==1){
          home.classList.remove('disp')
@@ -41,6 +48,9 @@ home.classList.add('disp')
          home.classList.add('none')
          contact.classList.remove('add')
          aboutMe.classList.add('add')
+         if(abc < 761){
+     menuBar.classList.remove('menu-display')
+ }
 
      }
     if(id==2){
@@ -50,6 +60,10 @@ home.classList.add('disp')
        certificates.classList.remove('add')
        contact.classList.remove('add')
        portfolio.classList.add('add')
+       if(abc < 761){
+        menuBar.classList.remove('menu-display')
+
+ }
        
     }
     if(id==3){
@@ -60,6 +74,12 @@ home.classList.add('disp')
         contact.classList.remove('add')
         certificates.classList.add('add')
         console.log(certificates);
+     if(abc < 761){
+     menuBar.classList.remove('menu-display')
+     
+ }
+   
+  
     }
     if(id==4){
            home.classList.remove('disp')
@@ -68,6 +88,10 @@ home.classList.add('disp')
        portfolio.classList.remove('add')
        certificates.classList.remove('add')
        contact.classList.add('add')
+       if(abc < 761){
+     menuBar.classList.remove('menu-display')
+     
+ }
        
     
     
