@@ -33,6 +33,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 100vh;
+  background-color: red;
 }
 /* Menu Content */
 .left-margin {
@@ -263,7 +265,7 @@ body {
 }
 
 .contact-content {
-  width: 80%;
+  width: 0%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -271,7 +273,6 @@ body {
   position: absolute;
   bottom: 0;
 
-  border: 2px solid white;
   a {
     background-color: transparent;
     color: none;
@@ -408,6 +409,7 @@ body {
       height: 100px;
     }
   }
+
   .main-menu {
     margin-left: 2vh;
     width: 43%;
@@ -424,8 +426,12 @@ body {
     height: 100vh;
   }
   .left-margin {
-    width: 40% !important;
-    display: none;
+    position: fixed;
+    left: 0;
+    z-index: 200;
+    overflow: hidden;
+    transition: all 0.6s;
+    width: 0%;
   }
   .menu-btn {
     right: 0;
@@ -445,8 +451,8 @@ body {
     display: none;
   }
   .about-me {
-    width: 60%;
-    margin-left: 40vw;
+    width: 80%;
+
     h1,
     h2 {
       font-size: 0.9rem;
@@ -455,10 +461,13 @@ body {
       font-size: 10px;
     }
   }
+  .about-me-content {
+    width: 100%;
+  }
   // portfolio section
   .portfolio {
-    width: 70%;
-    margin-left: 23vh;
+    width: 80%;
+
     text-align: center;
   }
   .column-left {
@@ -500,14 +509,14 @@ body {
     }
   }
   .certificates-content {
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 200px;
     img {
       border: 4px solid $blue;
       border-radius: 10px;
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
     }
     h1 {
       font-size: 0.5rem;
@@ -529,7 +538,5 @@ body {
   top: 0;
 }
 .menu-display {
-  display: inline-block;
-  width: 40%;
-  position: relative;
+  width: 28%;
 }
