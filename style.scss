@@ -14,9 +14,9 @@ body {
 
 // Main tag
 .main-content {
-  background-color: #17181b;
   position: relative;
   width: 100%;
+  background-color: #17181b;
 }
 // Container of first Main Section and Menu Bar
 .main-page {
@@ -170,15 +170,16 @@ body {
   position: relative;
   display: none;
   margin: auto;
-  margin-left: 18%;
+  margin-left: 11%;
 }
 // portfolio content container
 .portfolio-content {
   display: flex;
   width: 90%;
   margin: auto;
+
   margin-top: 5vh;
-  justify-content: center;
+  justify-content: space-between;
 }
 // portfolio content left side container
 .column-left {
@@ -220,10 +221,9 @@ body {
   display: none;
   position: relative;
   width: 90%;
-  text-align: center;
   margin: auto;
   text-align: center;
-  margin-left: 20vh;
+  margin-left: 11% !important;
   h1 {
     width: 90%;
     margin: auto;
@@ -246,32 +246,25 @@ body {
 .contact {
   display: none;
   position: relative;
-  height: 100vh;
-  width: 85%;
+  height: auto;
+  width: 60%;
   color: white;
-  height: 100vh;
-  margin-left: 22vh;
+  margin-left: 25%;
+  text-align: center;
+
   h1 {
     text-align: center;
-    padding: 3vh;
     color: $blue;
-  }
-  p {
-    text-align: center;
-    margin-top: 3vh;
-    font-family: "Dancing Script", cursive;
-    font-size: 1.3rem;
   }
 }
 
 .contact-content {
-  width: 0%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   text-transform: capitalize;
-  position: absolute;
-  bottom: 0;
+  width: 80%;
+  margin-top: 10vh;
 
   a {
     background-color: transparent;
@@ -281,11 +274,12 @@ body {
 }
 
 .form-container {
-  width: 80%;
+  width: 70%;
   text-align: center;
-  margin: auto;
-  margin-top: 10vh;
+  height: 70vh;
   border: 2px solid $blue;
+
+  margin: auto;
   input {
     width: 200px;
     height: 20px;
@@ -303,7 +297,7 @@ body {
   font-family: "Playfair Display", serif;
   text-transform: capitalize;
   height: 50vh;
-  margin-top: 5vh;
+  margin-top: 8vh;
 
   button {
     background-color: $blue;
@@ -312,7 +306,7 @@ body {
     padding: 10px 40px 10px 40px;
     border: transparent;
     border-radius: 10px;
-    margin-top: 3vh;
+    margin-top: 10vh;
     font-size: 1rem;
     letter-spacing: 2px;
     font-family: "Playfair Display", serif;
@@ -351,36 +345,24 @@ body {
   // portfolio section
   .portfolio {
     width: 70%;
-    margin-left: 23vh;
-    text-align: center;
-  }
-  .column-left {
-    display: grid;
-    grid-template-columns: 150px;
-    height: 50vh;
-    img {
-      justify-self: center;
-      width: 150px;
-      height: 150px;
-      border: 4px solid white;
-      border-radius: 10px;
+    margin-left: 30%;
+    h1 {
+      margin-left: 30%;
     }
   }
-  .column-right {
+
+  .portfolio-content {
     width: 80%;
     display: grid;
-    grid-template-columns: 200px;
-    grid-gap: 50px;
-    justify-content: center;
-    height: 50vh;
+    grid-template-columns: 200px 200px;
+
     img {
       width: 200px;
-      border: 4px solid white;
-      border-radius: 10px;
     }
   }
   .certificates {
     width: 70%;
+    margin-left: 30% !important;
   }
   .certificates-content {
     grid-template-columns: repeat(2, 150px);
@@ -389,10 +371,19 @@ body {
     }
   }
   .contact {
-    width: 70%;
+    width: 80%;
+    margin-left: 20%;
+    h1 {
+      margin-top: 2vh;
+    }
+  }
+  .form-container {
+    margin-top: 5vh;
   }
   .contact-content {
     width: 80%;
+    display: flex;
+    justify-content: space-between;
   }
   .title {
     width: 80%;
@@ -401,6 +392,9 @@ body {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .main-content {
+    width: 100%;
+  }
   .photo-text {
     width: 100px;
     height: 100px;
@@ -423,6 +417,7 @@ body {
     font-size: 1rem;
   }
   .home-main-section {
+    width: 100%;
     height: 100vh;
   }
   .left-margin {
@@ -467,34 +462,13 @@ body {
   // portfolio section
   .portfolio {
     width: 80%;
-
     text-align: center;
-  }
-  .column-left {
-    display: grid;
-    grid-template-columns: 50px;
-    height: 50vh;
-    img {
-      justify-self: center;
-      width: 50px;
-      height: 50px;
-      border: 1px solid white;
-      border-radius: 10px;
+    h1 {
+      margin-left: 11% !important;
+      font-size: 20px;
     }
   }
-  .column-right {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 100px;
-    grid-gap: 50px;
-    justify-content: center;
-    height: 50vh;
-    img {
-      width: 100px;
-      border: 1px solid white;
-      border-radius: 10px;
-    }
-  }
+
   .portfolio-content {
     display: grid;
     grid-template-columns: 100px 100px;
@@ -504,23 +478,62 @@ body {
     }
   }
   .certificates {
+    width: 80%;
+    margin: auto;
     h1 {
-      font-size: 0.9rem;
+      font-size: 20px;
     }
   }
   .certificates-content {
-    width: 80%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 100px 100px;
+
     img {
       border: 4px solid $blue;
       border-radius: 10px;
       width: 100px;
       height: 100px;
+      justify-self: center;
     }
     h1 {
       font-size: 0.5rem;
     }
+  }
+
+  .contact {
+    margin-left: 11%;
+    width: 80%;
+    height: 65vh;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  textarea {
+    width: 100px;
+    height: 50px;
+  }
+  .form-container {
+    margin-top: 5vh;
+    font-size: 15px;
+
+    button {
+      font-size: 10px;
+      padding: 5px 10px 5px 10px;
+      border-radius: 5px;
+      margin-top: 5vh;
+    }
+    input {
+      width: 120px;
+      margin: 20px;
+    }
+  }
+  .contact-content {
+    margin-top: 15vh;
+  }
+
+  .fab {
+    font-size: 25px;
   }
 }
 
@@ -538,5 +551,5 @@ body {
   top: 0;
 }
 .menu-display {
-  width: 28%;
+  width: 40%;
 }
