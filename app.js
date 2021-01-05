@@ -2,7 +2,6 @@ const buttons = document.querySelectorAll('.menu-lists');
 const menu = document.querySelector('.main-menu')
 const right = document.querySelector('.right-side-content')
 const main = document.querySelector('.main-content')
-
 const home = document.querySelector('.home-main-section')
 const portfolio = document.querySelector('.portfolio')
 const certificates = document.querySelector('.certificates')
@@ -11,21 +10,10 @@ const contact = document.querySelector('.contact')
  const menuBtn = document.querySelector('.menu-btn')
 const menuBar = document.querySelector('.left-margin')
 const sections = document.querySelector('.sections')
-console.log(sections);
 const rect = main.getBoundingClientRect().width
-let abc = 0
-window.addEventListener('resize',()=>{
-    const data= main.getBoundingClientRect().width
-    abc = data
-    console.log(abc);
-})
-console.log(abc);
 const change = (id)=>{
-   
-      
      const main = document.querySelector('.main-content')
-
-     const menuBar = document.querySelector('.left-margin')
+  const menuBar = document.querySelector('.left-margin')
      if(id==0){
 portfolio.classList.remove('add')
 certificates.classList.remove('add')
@@ -35,30 +23,27 @@ contact.classList.remove('add')
 home.classList.add('disp')
  if(rect < 761){
  menuBar.classList.remove('menu-display')  
- }
-     }
+ }}
      if(id==1){
-         home.classList.remove('disp')
-         portfolio.classList.remove('add')
-         certificates.classList.remove('add')
-         home.classList.add('none')
-         contact.classList.remove('add')
-         aboutMe.classList.add('add')
-         if(rect < 761){
-     menuBar.classList.remove('menu-display')  
- }
-     }
+home.classList.remove('disp')
+portfolio.classList.remove('add')
+certificates.classList.remove('add')
+home.classList.add('none')
+contact.classList.remove('add')
+aboutMe.classList.add('add')
+if(rect < 761){
+ menuBar.classList.remove('menu-display')  
+ }}
     if(id==2){
-       home.classList.remove('disp')
-       home.classList.add('none')
-       aboutMe.classList.remove('add')
-       certificates.classList.remove('add')
-       contact.classList.remove('add')
-       portfolio.classList.add('add')
-       if(rect < 761){
-     menuBar.classList.remove('menu-display')  
- }
-    }
+home.classList.remove('disp')
+home.classList.add('none')
+aboutMe.classList.remove('add')
+certificates.classList.remove('add')
+contact.classList.remove('add')
+portfolio.classList.add('add')
+    if(rect < 761){
+menuBar.classList.remove('menu-display')  
+ }}
     if(id==3){
         home.classList.remove('disp')
        home.classList.add('none')
@@ -66,11 +51,9 @@ home.classList.add('disp')
         portfolio.classList.remove('add')
         contact.classList.remove('add')
         certificates.classList.add('add')
-        console.log(certificates);
      if(rect < 761){
-     menuBar.classList.remove('menu-display')   
- }
-    }
+     menuBar.classList.remove('menu-display')
+    }}
     if(id==4){
            home.classList.remove('disp')
        home.classList.add('none')
@@ -83,11 +66,9 @@ home.classList.add('disp')
  }
     }
  }
-
  menuBtn.addEventListener('click', (e)=>{
     menuBar.classList.toggle('menu-display')
  })
- 
 menu.addEventListener('click',(e)=>{
     const id = e.target.dataset.id   
     if(id){
@@ -98,10 +79,3 @@ buttons.forEach((button)=>{
     }
     change(id)
 })
-
-
-
-// 1 .home-main-section
-// 2 .about-me
-// 3 .portfolio-content
-// 4 certificates

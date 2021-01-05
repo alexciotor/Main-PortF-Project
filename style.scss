@@ -170,8 +170,53 @@ body {
   position: relative;
   display: none;
   margin: auto;
-  margin-left: 11%;
+  margin-left: 15%;
 }
+.portfolio-article {
+  overflow: hidden;
+  position: relative;
+  color: white;
+
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  header {
+    transition: all 0.7s;
+    position: absolute;
+    top: -30%;
+  }
+  footer {
+    transition: all 0.7s;
+    position: absolute;
+    bottom: -40%;
+  }
+  .article-underiline {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    opacity: 0.1;
+    transition: all 0.7s;
+  }
+}
+.portfolio-article:hover {
+  footer {
+    bottom: 40%;
+  }
+  header {
+    top: 30%;
+  }
+  .article-underiline {
+    opacity: 0.7;
+    background-color: $blue;
+  }
+}
+
 // portfolio content container
 .portfolio-content {
   display: flex;
@@ -181,31 +226,14 @@ body {
   margin-top: 5vh;
   justify-content: space-between;
 }
-// portfolio content left side container
-.column-left {
-  display: grid;
-  grid-template-columns: 300px;
-  grid-row-gap: 50px;
-  height: 100vh;
-  img {
-    justify-self: center;
-    width: 300px;
-    height: 300px;
-    border: 4px solid white;
-    border-radius: 10px;
-  }
-}
-//  portfolio content right side container
+
 .portfolio-content {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-gap: 10px;
-  img {
-    width: 300px;
-  }
+  grid-gap: 100px;
 }
 
-// main images
+// main portfolio images
 
 .portfolio-title {
   text-align: center;
@@ -238,9 +266,25 @@ body {
   grid-template-columns: repeat(3, 300px);
   grid-gap: 20px;
   justify-content: center;
+}
+
+.certificate-article {
+  margin: 30px;
+  transition: 0.5s;
+  color: white;
+  position: relative;
+  width: 300px;
+  height: 300px;
   img {
-    width: 300px;
+    width: 100%;
+    height: 100%;
   }
+}
+
+.certificate-article:hover {
+  z-index: 10;
+  width: 500px;
+  height: 600px;
 }
 
 .contact {
@@ -391,7 +435,7 @@ body {
     margin: auto;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 760px) {
   .main-content {
     width: 100%;
   }
