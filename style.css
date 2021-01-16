@@ -1,5 +1,3 @@
-$blue: #00a3e1;
-
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +10,12 @@ body {
   background-color: #17181b;
 }
 
-// Main tag
 .main-content {
   position: relative;
   width: 100%;
   background-color: #17181b;
 }
-// Container of first Main Section and Menu Bar
+
 .main-page {
   display: flex;
   position: relative;
@@ -36,6 +33,7 @@ body {
   height: 100vh;
   background-color: red;
 }
+
 /* Menu Content */
 .left-margin {
   background-color: #17181b;
@@ -43,17 +41,18 @@ body {
   height: 100vh;
   text-align: center;
 }
-// Menu Bar image Container
+
 .photo-text {
   border-radius: 3px;
   position: relative;
   width: 200px;
   border: 1px solid white;
-  img {
-    width: 200px;
-  }
 }
-// Font Awesome Person Image
+
+.photo-text img {
+  width: 200px;
+}
+
 .name {
   font-family: "Playfair Display", serif;
   display: inline-block;
@@ -67,7 +66,7 @@ body {
   padding: 2px;
   font-weight: 300;
 }
-// Menu Bar container
+
 .main-menu {
   margin-top: 1vh;
   font-size: 20px;
@@ -77,21 +76,21 @@ body {
   grid-row-gap: 30px;
   justify-content: center;
 }
-// Menu Items Class
+
 .menu-btn {
   display: none;
 }
+
 .menu-lists {
   text-transform: capitalize;
   list-style-type: none;
   margin-left: 15px;
 }
-// Menu items active class
+
 .active {
   color: white;
 }
 
-// underline for background image class
 .underline {
   position: absolute;
   width: 100%;
@@ -100,7 +99,6 @@ body {
   opacity: 0.6;
 }
 
-// }  main section title
 .header-title {
   font-family: "Playfair Display", serif;
   position: relative;
@@ -111,16 +109,17 @@ body {
   color: white;
   font-size: 1.7rem;
 }
-// main section Name color
+
 .fam-name {
   color: #00a3e1;
 }
+
 .move {
   color: grey;
   animation: moves 5s infinite;
   display: inline-block;
 }
-// about me container
+
 .about-me {
   display: none;
   position: relative;
@@ -129,7 +128,7 @@ body {
   transition: 1s;
   padding-bottom: 3vh;
 }
-// About me title container
+
 .about-me-title {
   margin: auto;
   color: #00a3e1;
@@ -139,32 +138,33 @@ body {
   border-bottom: 1px dotted grey;
   width: 80%;
 }
-// about me font awesome image
+
 .span {
   display: inline-block;
   margin-top: 1vh;
 }
-// about me content container
+
 .about-me-content {
   margin-top: 4vh;
   color: white;
   width: 80%;
   margin: auto;
-  h2 {
-    text-align: center;
-    margin-bottom: 3vh;
-    font-size: 1.5rem;
-    color: rgb(159, 154, 154);
-    margin-top: 3vh;
-  }
-  p {
-    font-size: 0.8rem;
-    line-height: 3vh;
-    padding-bottom: 3vh;
-  }
 }
 
-// portfoliu container
+.about-me-content h2 {
+  text-align: center;
+  margin-bottom: 3vh;
+  font-size: 1.5rem;
+  color: #9f9a9a;
+  margin-top: 3vh;
+}
+
+.about-me-content p {
+  font-size: 0.8rem;
+  line-height: 3vh;
+  padding-bottom: 3vh;
+}
+
 .portfolio {
   width: 80%;
   position: relative;
@@ -172,57 +172,59 @@ body {
   margin: auto;
   margin-left: 15%;
 }
+
 .portfolio-article {
   overflow: hidden;
   position: relative;
   color: white;
-
   width: 300px;
   height: 300px;
   border: 2px solid white;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-
-  header {
-    transition: all 0.7s;
-    position: absolute;
-    top: -30%;
-  }
-  footer {
-    transition: all 0.7s;
-    position: absolute;
-    bottom: -40%;
-  }
-  .article-underiline {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: $blue;
-    opacity: 0.1;
-    transition: all 0.7s;
-  }
-}
-.portfolio-article:hover {
-  footer {
-    bottom: 40%;
-  }
-  header {
-    top: 30%;
-  }
-  .article-underiline {
-    opacity: 0.7;
-    background-color: $blue;
-  }
 }
 
-// portfolio content container
+.portfolio-article img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-article header {
+  transition: all 0.7s;
+  position: absolute;
+  top: -30%;
+}
+
+.portfolio-article footer {
+  transition: all 0.7s;
+  position: absolute;
+  bottom: -40%;
+}
+
+.portfolio-article .article-underiline {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00a3e1;
+  opacity: 0.1;
+  transition: all 0.7s;
+}
+
+.portfolio-article:hover footer {
+  bottom: 40%;
+}
+
+.portfolio-article:hover header {
+  top: 30%;
+}
+
+.portfolio-article:hover .article-underiline {
+  opacity: 0.7;
+  background-color: #00a3e1;
+}
+
 .portfolio-content {
   display: flex;
   width: 90%;
   margin: auto;
-
   margin-top: 5vh;
   justify-content: space-between;
 }
@@ -233,18 +235,18 @@ body {
   grid-gap: 100px;
 }
 
-// main portfolio images
-
 .portfolio-title {
   text-align: center;
-  color: $blue;
+  color: #00a3e1;
   width: 80%;
   margin-top: 3vh;
   margin-bottom: 10vh;
 }
+
 .cert-image {
   width: 600px;
 }
+
 .certificates {
   display: none;
   position: relative;
@@ -252,14 +254,16 @@ body {
   margin: auto;
   text-align: center;
   margin-left: 11% !important;
-  h1 {
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    color: $blue;
-    padding: 4vh;
-  }
 }
+
+.certificates h1 {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: #00a3e1;
+  padding: 4vh;
+}
+
 .certificates-content {
   display: grid;
   margin-top: 10vh;
@@ -275,10 +279,11 @@ body {
   position: relative;
   width: 300px;
   height: 300px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
+}
+
+.certificate-article img {
+  width: 100%;
+  height: 100%;
 }
 
 .certificate-article:hover {
@@ -295,11 +300,11 @@ body {
   color: white;
   margin-left: 25%;
   text-align: center;
+}
 
-  h1 {
-    text-align: center;
-    color: $blue;
-  }
+.contact h1 {
+  text-align: center;
+  color: #00a3e1;
 }
 
 .contact-content {
@@ -309,54 +314,58 @@ body {
   text-transform: capitalize;
   width: 80%;
   margin-top: 10vh;
+}
 
-  a {
-    background-color: transparent;
-    color: none;
-    color: white;
-  }
+.contact-content a {
+  background-color: transparent;
+  color: none;
+  color: white;
 }
 
 .form-container {
   width: 70%;
   text-align: center;
   height: 70vh;
-  border: 2px solid $blue;
-
+  border: 2px solid #00a3e1;
   margin: auto;
-  input {
-    width: 200px;
-    height: 20px;
-    text-align: center;
-    margin-bottom: 2vh;
-  }
-  label {
-    margin-top: 2vh;
-  }
-  textarea {
-    text-align: center;
-  }
 }
+
+.form-container input {
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.form-container label {
+  margin-top: 2vh;
+}
+
+.form-container textarea {
+  text-align: center;
+}
+
 .contact-form {
   font-family: "Playfair Display", serif;
   text-transform: capitalize;
   height: 50vh;
   margin-top: 8vh;
-
-  button {
-    background-color: $blue;
-    color: white;
-    text-transform: capitalize;
-    padding: 10px 40px 10px 40px;
-    border: transparent;
-    border-radius: 10px;
-    margin-top: 10vh;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
-  }
 }
+
+.contact-form button {
+  background-color: #00a3e1;
+  color: white;
+  text-transform: capitalize;
+  padding: 10px 40px 10px 40px;
+  border: transparent;
+  border-radius: 10px;
+  margin-top: 10vh;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+}
+
 .fab {
   font-size: 2rem;
   color: white;
@@ -364,45 +373,43 @@ body {
 
 .fa-linkedin {
   border: transparent;
-  color: $blue;
+  color: #00a3e1;
   background-color: white;
 }
+
 .linkedin {
   border: transparent;
   background-color: transparent;
   overflow: hidden;
 }
+
 .fa-twitter {
-  color: $blue;
+  color: #00a3e1;
 }
 
 @media only screen and (min-width: 761px) and (max-width: 1160px) {
   .main-page {
     width: 100%;
   }
-  // about me section
   .about-me {
     margin-top: 2vh;
     width: 70%;
     margin-left: 22vh;
   }
-  // portfolio section
   .portfolio {
     width: 70%;
     margin-left: 30%;
-    h1 {
-      margin-left: 30%;
-    }
   }
-
+  .portfolio h1 {
+    margin-left: 30%;
+  }
   .portfolio-content {
     width: 80%;
     display: grid;
     grid-template-columns: 200px 200px;
-
-    img {
-      width: 200px;
-    }
+  }
+  .portfolio-content img {
+    width: 200px;
   }
   .certificates {
     width: 70%;
@@ -410,16 +417,16 @@ body {
   }
   .certificates-content {
     grid-template-columns: repeat(2, 150px);
-    img {
-      width: 150px;
-    }
+  }
+  .certificates-content img {
+    width: 150px;
   }
   .contact {
     width: 80%;
     margin-left: 20%;
-    h1 {
-      margin-top: 2vh;
-    }
+  }
+  .contact h1 {
+    margin-top: 2vh;
   }
   .form-container {
     margin-top: 5vh;
@@ -435,6 +442,7 @@ body {
     margin: auto;
   }
 }
+
 @media only screen and (min-width: 320px) and (max-width: 760px) {
   .main-content {
     width: 100%;
@@ -442,12 +450,11 @@ body {
   .photo-text {
     width: 100px;
     height: 100px;
-    img {
-      width: 100%;
-      height: 100px;
-    }
   }
-
+  .photo-text img {
+    width: 100%;
+    height: 100px;
+  }
   .main-menu {
     margin-left: 2vh;
     width: 43%;
@@ -459,11 +466,6 @@ body {
   }
   .header-title {
     font-size: 1rem;
-  }
-  .about-me-title {
-    display: inline-block;
-    margin: auto;
-    text-align: center;
   }
   .home-main-section {
     width: 100%;
@@ -496,82 +498,56 @@ body {
   }
   .about-me {
     width: 80%;
-
-    h1,
-    h2 {
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    p {
-      font-size: 10px;
-    }
+  }
+  .about-me h1,
+  .about-me h2 {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .about-me p {
+    font-size: 10px;
   }
   .about-me-content {
     width: 100%;
   }
-  // portfolio section
   .portfolio {
     width: 80%;
     text-align: center;
-    h1 {
-      margin-left: 11% !important;
-      font-size: 20px;
-    }
   }
-
+  .portfolio h1 {
+    margin-left: 11% !important;
+    font-size: 20px;
+  }
   .portfolio-content {
     display: grid;
     grid-template-columns: 100px 100px;
     grid-gap: 10px;
-    img {
-      width: 100%;
-    }
   }
-  .certificate-article {
-    margin: 30px;
-    transition: 0.5s;
-    color: white;
-    position: relative;
+  .portfolio-content img {
     width: 100px;
-    height: 100px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .certificate-article:hover {
-    z-index: 10;
-    width: 150px;
-    height: 160px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
   .certificates {
-    width: 70% !important;
+    width: 80%;
     margin: auto;
-    h1 {
-      font-size: 20px;
-    }
+  }
+  .certificates h1 {
+    font-size: 20px;
   }
   .certificates-content {
     width: 100%;
     display: grid;
     grid-template-columns: 100px 100px;
-
-    img {
-      border: 4px solid $blue;
-      border-radius: 10px;
-      width: 100px;
-      height: 100px;
-      justify-self: center;
-    }
-    h1 {
-      font-size: 0.5rem;
-    }
   }
-
+  .certificates-content img {
+    border: 4px solid #00a3e1;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+  }
+  .certificates-content h1 {
+    font-size: 0.5rem;
+  }
   .contact {
     margin-left: 11%;
     width: 80%;
@@ -587,24 +563,25 @@ body {
   .form-container {
     margin-top: 5vh;
     font-size: 15px;
-
-    button {
-      font-size: 10px;
-      padding: 5px 10px 5px 10px;
-      border-radius: 5px;
-      margin-top: 5vh;
-    }
-    input {
-      width: 120px;
-      margin: 20px;
-    }
+  }
+  .form-container button {
+    font-size: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin-top: 5vh;
+  }
+  .form-container input {
+    width: 120px;
+    margin: 20px;
   }
   .contact-content {
     margin-top: 15vh;
   }
-
   .fab {
     font-size: 25px;
+  }
+  .about-me-title h1 {
+    display: none;
   }
 }
 
@@ -621,6 +598,7 @@ body {
   position: absolute;
   top: 0;
 }
+
 .menu-display {
   width: 40%;
 }
