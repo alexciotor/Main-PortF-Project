@@ -38,7 +38,7 @@ body {
 }
 /* Menu Content */
 .left-margin {
-  min-width: 11%;
+  width: 11%;
   background-color: #17181b;
   color: #6d6f6f;
   height: 100vh;
@@ -478,9 +478,10 @@ body {
     overflow: hidden;
     transition: all 0.6s;
     width: 0%;
-    img {
-    }
     .photo-text {
+      width: 100%;
+    }
+    img {
       width: 100%;
     }
   }
