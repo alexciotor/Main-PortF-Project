@@ -26,7 +26,7 @@ const displayProjects = ()=>{
         const{name,type,img,href} = item
         return ` <a href=${href} target="_blank"><article class="portfolio-article">
       <div class="article-underiline"></div>
-        <img src="${img}" name="${name}">
+        <img src="${img}">
         <header class="article-header">
 <span class="article-span">${name}</span>
         </header>
