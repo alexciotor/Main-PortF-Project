@@ -126,9 +126,9 @@ body {
   display: none;
   position: relative;
   width: 90%;
-  margin-left: 15%;
+  left: 10%;
   transition: 1s;
-  padding-bottom: 3vh;
+  margin-top: 5vh;
 }
 // About me title container
 .about-me-title {
@@ -136,7 +136,7 @@ body {
   color: #00a3e1;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+
   border-bottom: 1px dotted grey;
   width: 80%;
 }
@@ -170,8 +170,7 @@ body {
   width: 90%;
   position: relative;
   display: none;
-  margin: auto;
-  margin-left: 15%;
+  left: 13%;
   h1 {
     text-align: center;
   }
@@ -234,7 +233,8 @@ body {
 .portfolio-content {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-gap: 100px;
+  grid-gap: 50px;
+  justify-content: center;
 }
 
 // main portfolio images
@@ -242,10 +242,9 @@ body {
 .portfolio-title {
   text-align: center;
   color: $blue;
-  width: 80%;
+  width: 100%;
   margin-top: 3vh;
   margin-bottom: 10vh;
-  margin: auto;
 }
 .cert-image {
   width: 600px;
@@ -309,8 +308,9 @@ body {
   display: flex;
   justify-content: space-between;
   text-transform: capitalize;
-  width: 80%;
+  width: 8%;
   margin-top: 10vh;
+  padding-bottom: 3vh;
 
   a {
     background-color: transparent;
@@ -447,13 +447,13 @@ body {
   // about me section
   .about-me {
     margin-top: 2vh;
-    width: 70%;
-    margin-left: 22vh;
+    width: 60%;
+    left: 14vw;
   }
   // portfolio section
   .portfolio {
-    width: 70%;
-    margin-left: 30%;
+    width: 60%;
+    left: 14vw;
   }
 
   .portfolio-content {
@@ -466,13 +466,14 @@ body {
     }
   }
   .certificates {
-    width: 80%;
+    width: 60%;
+    left: 14vw;
   }
   .certificates-content {
     justify-content: center;
     grid-template-columns: 300px;
     img {
-      width: 100%;
+      width: 300px;
     }
   }
 
