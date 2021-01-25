@@ -29,7 +29,7 @@ body {
 .home-main-section {
   position: relative;
   background: url("/photos/pexels-fauxels-3184357.jpg");
-  width: 80%;
+  width: 90%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -125,7 +125,7 @@ body {
 .about-me {
   display: none;
   position: relative;
-  width: 80%;
+  width: 90%;
   margin-left: 15%;
   transition: 1s;
   padding-bottom: 3vh;
@@ -167,7 +167,7 @@ body {
 
 // portfoliu container
 .portfolio {
-  width: 80%;
+  width: 90%;
   position: relative;
   display: none;
   margin: auto;
@@ -253,7 +253,7 @@ body {
 .certificates {
   display: none;
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-align: center;
   margin-left: 11% !important;
@@ -291,11 +291,12 @@ body {
   display: none;
   position: relative;
   height: auto;
-  width: 60%;
+  width: 90%;
   color: white;
-  margin-left: 25%;
-  text-align: center;
 
+  right: 0;
+
+  text-align: center;
   h1 {
     text-align: center;
     color: $blue;
