@@ -1,3 +1,6 @@
+import {Portfolio} from './portfolio.js'
+ 
+
 const buttons = document.querySelectorAll('.menu-lists');
 const menu = document.querySelector('.main-menu')
 const right = document.querySelector('.right-side-content')
@@ -10,7 +13,31 @@ const contact = document.querySelector('.contact')
  const menuBtn = document.querySelector('.menu-btn')
 const menuBar = document.querySelector('.left-margin')
 const sections = document.querySelector('.sections')
+const portfolioContent = document.querySelector('.portfolio-content')
 const rect = main.getBoundingClientRect().width
+window.addEventListener('DOMContentLoaded', function(){
+    displayProjects()
+})
+
+
+
+const displayProjects = ()=>{
+  let projects =  Portfolio.map(item=>{
+        const{name,type,img,href} = item
+        return ` <a href=${href} target="_blank"><article class="portfolio-article">
+      <div class="article-underiline"></div>
+        <img src="${img}" name="${name}">
+        <header class="article-header">
+<span class="article-span">${name}</span>
+        </header>
+        <footer class="article-footer">${type}</footer>
+      
+        </article></a>`
+    })
+ projects = projects.join('')
+ portfolioContent.innerHTML= projects
+}
+
 const change = (id)=>{
      const main = document.querySelector('.main-content')
   const menuBar = document.querySelector('.left-margin')
