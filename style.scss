@@ -595,6 +595,11 @@ body {
     width: 200px;
     height: 230px;
   }
+  .portfolio-title {
+    h1 {
+      margin-left: 0 !important;
+    }
+  }
   .certificates {
     width: 70% !important;
     margin: auto;
@@ -618,6 +623,7 @@ body {
   color: white;
   position: relative;
   width: 100%;
+  background-color: red;
   height: 100%;
 
   img {
@@ -628,7 +634,7 @@ body {
 .contact {
   left: 10%;
   width: 80%;
-  height: 100vh;
+  height: 6 0vh;
 }
 h1 {
   margin-top: 3vh;
@@ -644,7 +650,7 @@ textarea {
 .form-container {
   margin-top: 5vh;
   font-size: 15px;
-  height: 50vh;
+  height: 60vh;
   button {
     font-size: 10px;
     padding: 5px 10px 5px 10px;
@@ -657,8 +663,9 @@ textarea {
   }
 }
 .contact-content {
-  margin-top: 25vh;
+  margin-top: 15vh;
   width: 80%;
+  height: 100vh;
 }
 
 .fab {
