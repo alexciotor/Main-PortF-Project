@@ -35,12 +35,12 @@ type:'React Project',
 img: './photos/projects/modal.png',
 href:'https://sad-bhabha-51f05c.netlify.app/'
 },
-{
-    name: 'Shopping Cart Api',
-    type:'React Project',
-    img: './photos/projects/phone.png',
-    href:'https://lucid-meitner-f6bf8a.netlify.app/'
-},
+// {
+//     name: 'Shopping Cart Api',
+//     type:'React Project',
+//     img: './photos/projects/phone.png',
+//     href:'https://lucid-meitner-f6bf8a.netlify.app/'
+// },
 {
     name:"Reviews",
     type:'React Project',
