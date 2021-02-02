@@ -135,13 +135,59 @@ body {
   transition: 1s;
   margin-top: 5vh;
 }
+.tech {
+}
 .ul-tech {
-  color: red;
   list-style-type: none;
-  width: 20%;
+  width: 40%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  .tech-li {
+    font-size: 20px;
+  }
+  .fa-js-square {
+    border: none;
+    overflow: hidden;
+    outline: none;
+    color: #f7e018;
+    font-size: 50px;
+    background-color: white;
+  }
+  .fa-react {
+    border: none;
+    overflow: hidden;
+    outline: none;
+    color: $blue;
+    font-size: 50px;
+    background-color: white;
+  }
+  .fa-html5 {
+    color: #e44d26;
+    border: none;
+    overflow: hidden;
+    outline: none;
+
+    font-size: 50px;
+    background-color: white;
+  }
+  .fa-css3-alt {
+    color: #264de4;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    font-size: 50px;
+    background-color: white;
+  }
+  .fa-sass {
+    color: #cd669a;
+    border: none;
+    overflow: hidden;
+    outline: none;
+
+    font-size: 50px;
+    background-color: white;
+  }
 }
 
 // About me title container
@@ -453,6 +499,58 @@ body {
     grid-row-gap: 30px;
     justify-content: center;
   }
+  .ul-tech {
+    list-style-type: none;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .tech-li {
+      font-size: 20px;
+    }
+    .fa-js-square {
+      border: none;
+      overflow: hidden;
+      outline: none;
+      color: #f7e018;
+      font-size: 50px;
+      background-color: white;
+    }
+    .fa-react {
+      border: none;
+      overflow: hidden;
+      outline: none;
+      color: $blue;
+      font-size: 50px;
+      background-color: white;
+    }
+    .fa-html5 {
+      color: #e44d26;
+      border: none;
+      overflow: hidden;
+      outline: none;
+
+      font-size: 50px;
+      background-color: white;
+    }
+    .fa-css3-alt {
+      color: #264de4;
+      border: none;
+      overflow: hidden;
+      outline: none;
+      font-size: 50px;
+      background-color: white;
+    }
+    .fa-sass {
+      color: #cd669a;
+      border: none;
+      overflow: hidden;
+      outline: none;
+
+      font-size: 50px;
+      background-color: white;
+    }
+  }
   .left-margin {
     width: 20%;
   }
@@ -462,7 +560,9 @@ body {
     width: 60%;
     left: 28%;
   }
-
+  .about-me-content {
+    width: 100%;
+  }
   // portfolio section
   .portfolio {
     width: 60%;
@@ -544,6 +644,57 @@ body {
   .home-main-section {
     width: 100%;
     height: 100vh;
+  }
+  .ul-tech {
+    list-style-type: none;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .tech-li {
+    }
+    .fa-js-square {
+      border: none;
+      overflow: hidden;
+      outline: none;
+      color: #f7e018;
+      font-size: 30px;
+      background-color: white;
+    }
+    .fa-react {
+      border: none;
+      overflow: hidden;
+      outline: none;
+      color: $blue;
+      font-size: 30px;
+      background-color: white;
+    }
+    .fa-html5 {
+      color: #e44d26;
+      border: none;
+      overflow: hidden;
+      outline: none;
+
+      font-size: 30px;
+      background-color: white;
+    }
+    .fa-css3-alt {
+      color: #264de4;
+      border: none;
+      overflow: hidden;
+      outline: none;
+      font-size: 30px;
+      background-color: white;
+    }
+    .fa-sass {
+      color: #cd669a;
+      border: none;
+      overflow: hidden;
+      outline: none;
+
+      font-size: 30px;
+      background-color: white;
+    }
   }
 
   .left-margin {
