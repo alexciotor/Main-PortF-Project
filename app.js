@@ -1,5 +1,5 @@
 import {Portfolio} from './portfolio.js'
-
+import Certificates  from './certificates.js'
 const buttons = document.querySelectorAll('.menu-lists');
 const menu = document.querySelector('.main-menu')
 const right = document.querySelector('.right-side-content')
@@ -13,9 +13,12 @@ const contact = document.querySelector('.contact')
 const menuBar = document.querySelector('.left-margin')
 const sections = document.querySelector('.sections')
 const portfolioContent = document.querySelector('.portfolio-content')
+const certificatess = document.querySelector('.certificates-content');
+
 const rect = main.getBoundingClientRect().width
 window.addEventListener('DOMContentLoaded', function(){
     displayProjects()
+    displayCertificates()
 })
 
 
@@ -36,7 +39,16 @@ const displayProjects = ()=>{
  projects = projects.join('')
  portfolioContent.innerHTML= projects
 }
-
+const displayCertificates = ()=>{
+    let certificate = Certificates.map(item=>{
+        const {img} =item
+        return `  <article class="certificate-article">
+        <img src=${img} alt="" class="cert-image">
+            </article>
+        `
+    }).join('')
+    certificatess.innerHTML =certificate
+}
 const change = (id)=>{
      const main = document.querySelector('.main-content')
   const menuBar = document.querySelector('.left-margin')
