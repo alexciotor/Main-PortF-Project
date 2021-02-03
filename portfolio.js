@@ -49,7 +49,7 @@ img: './photos/projects/menu.png',
 href:'https://happy-kalam-6f72c8.netlify.app/'
 },
 {name: 'Modal',
-type:'React Project',
+type:'JavaScript Project',
 img: './photos/projects/modal.png',
 href:'https://sad-bhabha-51f05c.netlify.app/'
 },
