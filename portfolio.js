@@ -1,4 +1,22 @@
 export const Portfolio = [
+    {
+name: 'CocktailDB API',
+type:'React Router',
+img: './photos/projects/db.png',
+href: 'https://relaxed-beaver-dea84f.netlify.app/'
+},
+{
+    name:"Reviews",
+    type:'React Project',
+    img: './photos/projects/rev.png',
+    href:'https://happy-goldberg-5bda9f.netlify.app/'
+},
+{
+    name: 'Shopping Cart Api',
+    type:'React API',
+    img: './photos/projects/phone.png',
+    href:'https://lucid-meitner-f6bf8a.netlify.app/'
+},
 {name: 'Accordion',
 type:'React Project',
 img: './photos/projects/accordion.png',
@@ -35,24 +53,13 @@ type:'React Project',
 img: './photos/projects/modal.png',
 href:'https://sad-bhabha-51f05c.netlify.app/'
 },
-// {
-//     name: 'Shopping Cart Api',
-//     type:'React Project',
-//     img: './photos/projects/phone.png',
-//     href:'https://lucid-meitner-f6bf8a.netlify.app/'
-// },
-{
-    name:"Reviews",
-    type:'React Project',
-    img: './photos/projects/rev.png',
-    href:'https://happy-goldberg-5bda9f.netlify.app/'
-},
 {
     name:"Cocktails Api",
     type:'React Project',
     img: './photos/projects/cocktailes.png',
     href:'https://peaceful-wright-c7617d.netlify.app/'
-}
+},
+
 ]
 
  
