@@ -92,6 +92,9 @@ body {
   list-style-type: none;
   margin-left: 15px;
 }
+.menu-lists:hover {
+  cursor: pointer;
+}
 // Menu items active class
 .active {
   color: white;
