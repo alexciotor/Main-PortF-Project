@@ -7,16 +7,16 @@ href: 'https://relaxed-beaver-dea84f.netlify.app/'
 },
 {
     name:"Reviews",
-    type:'React Project',
+    type:'JavaScript Project',
     img: './photos/projects/rev.png',
     href:'https://happy-goldberg-5bda9f.netlify.app/'
 },
-{
-    name: 'Shopping Cart Api',
-    type:'React API',
-    img: './photos/projects/phone.png',
-    href:'https://lucid-meitner-f6bf8a.netlify.app/'
-},
+// {
+//     name: 'Shopping Cart Api',
+//     type:'React API',
+//     img: './photos/projects/phone.png',
+//     href:'https://lucid-meitner-f6bf8a.netlify.app/'
+// },
 {name: 'Accordion',
 type:'React Project',
 img: './photos/projects/accordion.png',
