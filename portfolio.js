@@ -5,6 +5,12 @@ type:'React (in progress..)',
 img: './photos/projects/db.png',
 href: 'https://relaxed-beaver-dea84f.netlify.app/'
 },
+ {
+name: 'Grocery List',
+type:'React Project',
+img: './photos/projects/gro.png',
+href: 'https://naughty-rosalind-9bcd44.netlify.app/'
+},
 {
     name:"Reviews",
     type:'JavaScript Project',
