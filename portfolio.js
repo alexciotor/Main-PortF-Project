@@ -14,7 +14,7 @@ href: 'https://naughty-rosalind-9bcd44.netlify.app/'
 {
     name: 'Shopping Cart Api',
     type:'React API',
-    img: './photos/projects/phone.png',
+    img: './photos/projects/cart.png',
     href:'https://lucid-meitner-f6bf8a.netlify.app/'
 },
  {
