@@ -11,6 +11,12 @@ type:'React Project',
 img: './photos/projects/gro.png',
 href: 'https://naughty-rosalind-9bcd44.netlify.app/'
 },
+{
+    name: 'Shopping Cart Api',
+    type:'React API',
+    img: './photos/projects/phone.png',
+    href:'https://lucid-meitner-f6bf8a.netlify.app/'
+},
  {
 name: 'Portfolio Project',
 type:'JavaScript Project',
@@ -23,12 +29,7 @@ href: 'https://alexciotor.netlify.app/'
     img: './photos/projects/rev.png',
     href:'https://happy-goldberg-5bda9f.netlify.app/'
 },
-{
-    name: 'Shopping Cart Api',
-    type:'React API',
-    img: './photos/projects/phone.png',
-    href:'https://lucid-meitner-f6bf8a.netlify.app/'
-},
+
 {name: 'Accordion',
 type:'React Project',
 img: './photos/projects/accordion.png',
