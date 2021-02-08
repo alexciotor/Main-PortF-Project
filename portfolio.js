@@ -11,6 +11,12 @@ type:'React Project',
 img: './photos/projects/gro.png',
 href: 'https://naughty-rosalind-9bcd44.netlify.app/'
 },
+ {
+name: 'Portfolio Project',
+type:'JavaScript Project',
+img: './photos/projects/port.png',
+href: 'https://alexciotor.netlify.app/'
+},
 {
     name:"Reviews",
     type:'JavaScript Project',
