@@ -1,10 +1,10 @@
 export const Portfolio = [
-    {
-        name: 'CocktailDB API',
-        type: 'React (in progress..)',
-        img: './photos/projects/db.png',
-        href: 'https://relaxed-beaver-dea84f.netlify.app/'
-    },
+    // {
+    //     name: 'CocktailDB API',
+    //     type: 'React (in progress..)',
+    //     img: './photos/projects/db.png',
+    //     href: 'https://relaxed-beaver-dea84f.netlify.app/'
+    // },
     {
         name: 'Grocery List',
         type: 'React Project',
